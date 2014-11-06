@@ -402,7 +402,7 @@ union.feature = (function() {
 				dukeenergy: "#d1f787"
 			},
 			txt: {
-				union: "#f5f5f5",
+				union: "#851F12",
 				mccollcenter: "#851F12",
 				dublindog: "#24334c",
 				amcc: "#f5f5f5",

@@ -167,7 +167,12 @@
         .csstransforms .st-menu nav[role="navigation"]{
             top: 58.7%;
         }
-
+        .m_jumbotron .positioning{
+            background: none;
+        }
+        .m_jumbotron.full .carousel .to-case-studies{
+            left: 49.7%;
+        }
         /*.tooltip{
             font-size: 15px !important;
         }
