@@ -396,7 +396,7 @@ union.feature = (function() {
 			},
 			colors: {
 				union: "#f6364d",
-				mccollcenter: "#65d28a",
+				mccollcenter: "#FFFFFF",
 				dublindog: "#68c223",
 				amcc: "#ea0023",
 				dukeenergy: "#d1f787"

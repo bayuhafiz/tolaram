@@ -1,0 +1,152 @@
+@font-face{
+            font-family: st_menu_page;
+            src:url(../fonts/gotham/Gotham-Medium.otf);
+        }
+        @font-face{
+            font-family: btn_view_more;
+            src:url(../fonts/gotham/Gotham-BookIta.otf);
+        }
+
+        @font-face{
+            font-family: client;
+            src:url(../fonts/gotham/Gotham-Book.otf);
+        }
+
+        @font-face{
+            font-family: gothamBold;
+            src:url(../fonts/gotham/Gotham-Bold.otf);
+        }
+
+        .m_jumbotron.full .carousel .tagline_title { 
+            font-size: 3rem;
+            color: #FFFFFF;
+            padding-bottom: 10px;
+        } 
+        .m_jumbotron.full .carousel .tagline {
+            font-size: 4rem;
+            color: #FFFFFF;
+            line-height: 1.2;
+            font-family: gothamBold;
+        }
+
+        .m_jumbotron.full .carousel .vision {
+            font-size: 3rem;
+            color: #851F12;
+            line-height: 1.2;
+            font-family: st_menu_page;
+        }
+
+        .m_jumbotron.full .carousel .vision_content {
+            font-size: 1.5rem;
+            color: #939598;
+            line-height: 1.2;
+            font-family: client;
+            position: relative;
+            top:-10px;
+            padding-bottom: 55px;
+        }
+
+        
+        .m_jumbotron.full .carousel .client {
+            font-family: client;
+            font-size: 3rem;
+            color: #FFF;
+        }
+
+        .m_jumbotron.full .carousel .case-study {
+            padding-top: 35vh;
+        }
+        .st-menu{
+            background:#FFF;
+        }
+        .menu-open .menu-trigger span.before, .menu-open .menu-trigger span.after{
+            background-color: #58595b !important;
+        }
+
+        .menu-trigger{
+            margin-right: 7%;
+        }
+
+
+        .st-menu .page{
+            font-size: 1.8rem;
+            font-family: st_menu_page;
+            line-height: 2.0 !important;
+        }
+        .st-menu .page a:hover{
+            color:#841F10;
+        }
+
+        .st-menu .nested{
+            padding-bottom: 0.4rem !important;
+        }
+        .st-menu .nested a{
+            font-size: 1.2rem;
+            
+        }
+
+        .m_jumbotron.full .carousel .btn-hollow{
+            font-family: btn_view_more;
+            color: #FFF !important;
+            background: transparent !important;
+            border-color: #FFF !important;
+            padding: 3px 7px !important;
+        }
+
+        .menu-open.st-container:after{
+            background-color: rgba(133,32,19,.85);
+        }
+
+        .menu-open.st-container {
+            min-height: 520px;
+        }
+
+        #featured-posts{
+            top: 29%%;
+            right: 17.5%;
+        }
+
+        .featured-content .heading{
+            font-family: st_menu_page;
+            font-size: 3rem;
+            color: #FFF;
+        }
+
+        .featured-content .sub-office-1{
+            float:left; 
+            padding-right:250px;
+            color:#FFF;
+            font-family: client;
+        }
+
+        .featured-content .sub-office-2{
+            float:left;
+            color:#FFF;
+            font-family: client;
+        }
+
+        .has-alert .masthead {
+            top: 20px;
+        }
+        .logo-union{
+            width: 155px;
+        }
+        .logo-union svg{
+            height: 104px;
+            position: relative;
+            top: -21px;
+        }
+
+        @media (min-width: 520px){
+            .st-menu {
+                width: 23%;
+                padding-right: 7%;
+            }
+        }
+        .st-menu .social{
+            padding-top: 25px;
+        }
+
+        .csstransforms .st-menu nav[role="navigation"]{
+            top: 58.7%;
+        }
