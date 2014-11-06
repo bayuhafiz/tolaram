@@ -143,6 +143,13 @@
                 padding-right: 7%;
             }
         }
+
+        @media (max-width: 520px){
+             .menu-open .brand .letter{
+                fill: rgb(133, 31, 18) !important;
+            }
+        }
+
         .st-menu .social{
             padding-top: 25px;
         }
@@ -150,3 +157,5 @@
         .csstransforms .st-menu nav[role="navigation"]{
             top: 58.7%;
         }
+
+       
