@@ -17,6 +17,11 @@
             src:url(../fonts/gotham/Gotham-Bold.otf);
         }
 
+        @font-face{
+            font-family: gothamMediumItalic;
+            src:url(../fonts/gotham/Gotham-MediumIta.otf);
+        }
+
         .m_jumbotron.full .carousel .tagline_title { 
             font-size: 3rem;
             color: #FFFFFF;
@@ -44,6 +49,9 @@
             position: relative;
             top:-10px;
             padding-bottom: 55px;
+            word-wrap:break-word;
+            width: 400px;
+            line-height: 1.5;
         }
 
         
@@ -53,6 +61,56 @@
             color: #FFF;
         }
 
+        .m_jumbotron.full .carousel .about_content{
+            font-family: client;
+            font-size: 1.2rem;
+            color: #FFF;
+            text-align: left;
+            position: relative;
+            top: -35px;
+            word-wrap: break-word;
+            width: 425px;
+        }
+
+        .m_jumbotron.full .carousel .history_content{
+            font-family: client;
+            font-size: 1.5rem;
+            color: #FFF;
+            text-align: left;
+            position: relative;
+            top: -35px;
+            word-wrap: break-word;
+            width: 500px;
+        }
+
+        .m_jumbotron.full .carousel .title_history{
+            font-family: btn_view_more;
+            font-size: 1.2rem;
+            color: #FFF;
+            text-align: left;
+            position: relative;
+            top: 15px;
+        }
+
+        .m_jumbotron.full .carousel .box-content{
+            float:right;
+            width:1000px;
+            height:auto; 
+            padding: 10px 0 35px 120px; 
+            background:rgba(133,31,18,0.7);
+            text-align: right;
+        }
+     
+
+        .m_jumbotron.full .carousel .box-content .btn-hollow{
+            float: left;
+            margin-right: 6px;
+            text-transform: lowercase;
+            font-family: client;
+            font-size: 1.2rem;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
         .m_jumbotron.full .carousel .case-study {
             padding-top: 35vh;
         }
@@ -158,6 +216,118 @@
             .featured-content .sub-office-1{
                 padding-right: 120px;
             }
+
+
+        }
+
+
+        @media (max-width:  533px) {
+            .m_jumbotron.full .carousel .about_content {
+                left: -80px;
+                word-wrap: break-word;
+                width: 400px;
+            }
+
+            .m_jumbotron.full .carousel .about_us {
+                position: relative;
+                left: -80px;
+            }
+            .m_jumbotron.full .carousel .box-content .btn-hollow{
+                left: -80px;
+                top: -18px;
+            }
+
+
+        }
+
+        @media (max-width:  480px) {
+            .m_jumbotron.full .carousel .about_content {
+                left: -80px;
+                word-wrap: break-word;
+                width: 400px;
+            }
+
+            .m_jumbotron.full .carousel .about_us {
+                position: relative;
+                left: -80px;
+            }
+            .m_jumbotron.full .carousel .box-content .btn-hollow{
+                left: -80px;
+                top: -18px;
+            }
+
+
+        }
+
+        @media (max-width:  384px) and (orientation:portrait) {
+            .m_jumbotron.full .carousel .about_content,
+            .m_jumbotron.full .carousel .history_content {
+                left: -80px;
+                word-wrap: break-word;
+                width: 290px;
+            }
+
+            .m_jumbotron.full .carousel .about_us,
+            .m_jumbotron.full .carousel .title_history,
+            .m_jumbotron.full .carousel .history {
+                position: relative;
+                left: -80px;
+            }
+            .m_jumbotron.full .carousel .box-content .btn-hollow{
+                left: -80px;
+                top: -18px;
+            }
+
+            .m_jumbotron.full .carousel .title_history_left,
+            .m_jumbotron.full .carousel .history_left,
+            .m_jumbotron.full .carousel .history_content_left{
+                left: -290px;
+                word-wrap: break-word;
+                width: 290px;
+            }
+
+
+        }
+
+        @media (max-width:  640px) and (orientation:landscape) {
+           .m_jumbotron.full .carousel .tagline {
+
+                font-size: 1.8rem;
+           }
+
+           .m_jumbotron.full .carousel .client{
+                font-size: 3rem;
+           }
+           .m_jumbotron.full .carousel .btn-hollow{
+                font-size: .5rem;
+                top: -30px;
+           }
+        }
+
+        @media (max-width:  320px){
+            .m_jumbotron.full .carousel .about_content {
+                left: -105px;
+                word-wrap: break-word;
+                width: 290px;
+            }
+
+            .m_jumbotron.full .carousel .about_us {
+                position: relative;
+                left: -105px;
+            }
+            .m_jumbotron.full .carousel .box-content .btn-hollow{
+                left: -105px;
+                top: -18px;
+            }
+
+
+        }
+
+        @media (max-width:  400px){
+            #features .case-study {
+                height: 730px !important;
+            }
+
         }
 
         .st-menu .social{
@@ -172,6 +342,38 @@
         }
         .m_jumbotron.full .carousel .to-case-studies{
             left: 49.7%;
+        }
+
+        .timeline{
+            float:left; 
+            margin-right:83px;
+        }
+
+        .circle_timeline{
+            width:40px; 
+            height:40px; 
+            border:1px solid #FFF; 
+            border-radius:50%; 
+            position: relative;
+            margin: auto; 
+            background: #FFFFFF;
+        }
+
+
+
+        .timeline p{
+            color: #FFFFFF !important;  
+            font-family: gothamMediumItalic;
+            font-size: 1.9rem;
+            position: relative;
+        }
+
+        .spin_timeline{
+            border:1px solid #FFFFFF; 
+            position:relative; 
+            top: 23px;
+            width: 1080px;
+            margin:auto;
         }
         /*.tooltip{
             font-size: 15px !important;
