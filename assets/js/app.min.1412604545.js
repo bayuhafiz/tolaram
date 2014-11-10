@@ -267,8 +267,11 @@ union.navbar = (function() {
 		init: function() {
 
 			$(".menu-trigger").on("click", function(e) {
+				
+
 				e.preventDefault();
 				if ($("#st-container").hasClass("menu-open")) {
+					//$(this).parent(".masthead").addClass("fixed-menu");
 					setTimeout(function() {
 						$(".st-content").prependTo("body");
 						$(".masthead").prependTo("body");
@@ -282,12 +285,16 @@ union.navbar = (function() {
 						$(window).scrollTop(scrollPos);
 						$(window).trigger('scroll');
 					}, 500);
+
+					
 				} else {
+					//$(this).parent(".masthead").removeClass("fixed-menu");
 					htmlHeight = $("html").height();
 					scrollPos = $(window).scrollTop();
 					$(".st-content").appendTo(".st-pusher");
 					$(".masthead").prependTo("#st-container");
 					$(".masthead").removeClass('is-fixed');
+
 
 					if($('body').hasClass('page-home')) {
 						union.feature.unbindScroll();
@@ -297,6 +304,7 @@ union.navbar = (function() {
 					$("body, html,.st-container").height('100%');
 					$(".st-pusher").scrollTop(scrollPos);
 					$(window).trigger('scroll');
+
 				}
 
 				$("#st-container").toggleClass("menu-open");

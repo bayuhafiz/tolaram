@@ -22,6 +22,10 @@
             src:url(../fonts/gotham/Gotham-MediumIta.otf);
         }
 
+        .m_jumbotron.full .carousel .positioning{
+            width: 100%;
+        }
+
         .m_jumbotron.full .carousel .tagline_title { 
             font-size: 3rem;
             color: #FFFFFF;
@@ -113,6 +117,24 @@
         }
         .m_jumbotron.full .carousel .case-study {
             padding-top: 35vh;
+            float:left !important;
+        }
+        .bx-viewport{
+            overflow: visible !important;
+        }
+        #left, #right{
+            cursor: pointer;
+            position: absolute;
+            z-index: 1;
+            top: -1px;
+        }
+
+        #right{
+            margin-left: 100px;
+        }
+
+        .outerwrapper{
+            width: 100%;
         }
         .st-menu{
             background:#FFF;
@@ -123,6 +145,7 @@
 
         .menu-trigger{
             margin-right: 7%;
+            top: 23px;
         }
 
 
@@ -208,7 +231,7 @@
             }
         }
 
-        @media (max-width:  1220px){
+        /*@media (max-width:  1220px){
             #featured-posts .featured-content .blog-content{
                 left:3px;
             }
@@ -328,7 +351,7 @@
                 height: 730px !important;
             }
 
-        }
+        }*/
 
         .st-menu .social{
             padding-top: 25px;
@@ -344,64 +367,98 @@
             left: 49.7%;
         }
 
-        .timeline{
-            float:left; 
-            margin-right:83px;
+        ul.spin{
+            position: absolute;
+            bottom: -670px;
+            z-index: 1;
+
         }
 
-        .circle_timeline{
-            width:40px; 
-            height:40px; 
-            border:1px solid #FFF; 
-            border-radius:50%; 
-            position: relative;
-            margin: auto; 
-            background: #FFFFFF;
+        ul.spin li {
+          width: 2em;
+          height: 2em;
+          text-align: center;
+          line-height: 2em;
+          border-radius: 1em;
+          border: 1px solid #FFF;
+          margin: 0 1em;
+          display: inline-block;
+          color: white;
+          position: relative;
+          cursor: pointer;
+        }
+
+
+        ul.spin li::before{
+          content: '';
+          position: absolute;
+          top: .9em;
+          left: -2.36em;
+          width: 2.36em;
+          height: .1em;
+          background: #FFF;
+          z-index: -1;
         }
 
 
 
-        .timeline p{
-            color: #FFFFFF !important;  
-            font-family: gothamMediumItalic;
-            font-size: 1.9rem;
-            position: relative;
+        ul.spin li:first-child::before {
+          display: none;
         }
 
-        .spin_timeline{
-            border:1px solid #FFFFFF; 
-            position:relative; 
-            top: 23px;
-            width: 1080px;
-            margin:auto;
+        ul.spin li:hover {
+          background: #841f10;
+          border:2px solid #FFF;
         }
-        /*.tooltip{
+
+       
+
+        
+
+
+
+       
+
+
+        /*.has-alert .masthead {
+            top: 0px; 
+        }
+
+        @media (min-width: 480px){
+            .masthead {
+                padding: 20px 0;
+            }
+        }
+
+        .fixed-menu{
+            border:1px solid #FFF;
+            background:#FFF;
+            padding-bottom: 73px;"
+        }*/
+
+    
+
+        .tooltip{
             font-size: 15px !important;
+
         }
         .tooltip:hover:after{
-            background: rgba(0,0,0, 0.7);
-            border-radius: 2px;
             top: -4px;
             color: #fff;
             content: attr(title);
-            left: -510%;
+            left: -400%;
             padding: 5px 15px;
             position: absolute;
             z-index: 98;
             width: auto;
         }
 
-        .tooltip:hover:before{
-            width: 0; 
-            height: 0; 
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
-            border-left: 5px solid rgba(0,0,0, 0.7);
-            bottom: 20px;
-            content: "";
-            left: -4%;
-            top:4px;
-            position: absolute;
-            z-index: 99;
-        }*/
-       
+        .slick-prev{
+            left:30px;
+            top:33%;
+        }
+
+        .slick-next{
+            right:30px;
+            top:33%;
+        }
